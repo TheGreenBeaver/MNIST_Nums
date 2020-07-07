@@ -1,7 +1,6 @@
 import numpy
 from scipy import ndimage
 from PIL import Image
-from matplotlib import pyplot
 from tensorflow import keras
 
 
@@ -95,9 +94,6 @@ work_with = [[] for _ in range(28)]
 for i in range(width):
     for j in range(height):
         work_with[j].append(max(0, pix[i, j] / 255))
-
-pyplot.imshow(work_with)
-pyplot.show()
 
 # --- ---
 
